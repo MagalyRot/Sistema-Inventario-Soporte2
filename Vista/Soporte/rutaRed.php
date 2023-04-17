@@ -203,7 +203,7 @@
                                         <div class="row justify-content-between">    
                                             <div class="col-6 mb-3">
                                                 <label for="setting-input-2" class="form-label">VLAN</label>
-                                                    <select class="form-select" aria-label="Default select example" id="vlan" required>
+                                                    <select class="form-select" aria-label="Default select example" id="vlan3" required>
                                                         <option >Seleccionar VLAN...</option>
                                                         <?php  
                                                         getVlan();
@@ -214,7 +214,7 @@
                                         <div class="row justify-content-between">
                                             <div class="col-6 mb-3">
                                                 <label for="setting-input-2" class="form-label">Segmento</label>
-                                                    <select class="form-select" aria-label="Default select example" id="segmento" required>
+                                                    <select class="form-select" aria-label="Default select example" id="segmento3" required>
                                                         <option >Seleccionar segmento...</option>
                                                         <?php
                                                         getSegmentos();
@@ -227,14 +227,14 @@
                                                             data-container="body" data-bs-toggle="popover" data-trigger="hover" data-placement="top"
                                                             data-content="This is a Bootstrap popover example. You can use popover to provide extra info.">
                                                         </label>
-                                                        <input type="text" class="form-control" id="nodo"  required>
+                                                        <input type="text" class="form-control" id="nodo3"  required>
                                                     </div>  
                                             </div>  
                                         </div>
                                         <div class="row justify-content-between">
                                         <div class="col-6 mb-3">
                                                 <label for="setting-input-2" class="form-label">Panel de Parcheo</label>
-                                                    <select class="form-select" id="panel1" aria-label="Default select example"  required>
+                                                    <select class="form-select" id="panel3" aria-label="Default select example"  required>
                                                         <option>Seleccionar panel...</option>
                                                         <?php
                                                             getParcheo();
@@ -243,7 +243,7 @@
                                             </div>
                                             <div class="col-6 mb-3">
                                                 <label for="setting-input-2" class="form-label">Puerto del panel</label>
-                                                <input type="text" class="form-control" id="puerto"  required>
+                                                <input type="text" class="form-control" id="puerto3"  required>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -326,12 +326,6 @@
                 <nav id="orders-table-tab" class="orders-table-tab app-nav-tabs nav shadow-sm flex-column flex-sm-row mb-4">
                     <a class="flex-sm-fill text-sm-center nav-link active" id="orders-all-tab" data-bs-toggle="tab" href="#orders-all"
                         role="tab" aria-controls="orders-all" aria-selected="true">Todas las rutas</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" id="orders-paid-tab" data-bs-toggle="tab" href="#orders-paid"
-                        role="tab" aria-controls="orders-paid" aria-selected="false">Centros de cómputo</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" id="orders-pending-tab" data-bs-toggle="tab" href="#orders-pending"
-                        role="tab" aria-controls="orders-pending" aria-selected="false">Departamentos</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" id="orders-cancelled-tab" data-bs-toggle="tab"
-                        href="#orders-cancelled" role="tab" aria-controls="orders-cancelled" aria-selected="false">Otros</a>
                 </nav>
 
                 <div class="tab-content" id="orders-table-tab-content">
@@ -509,7 +503,7 @@
 <script src="//code.jquery.com/jquery-3.5.1.js"></script>
     <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
     <script src="//cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
-    <script type="text/javascript" src="rutaRedController1.js"></script> 
+    <script type="text/javascript" src="rutaRedController2.js"></script> 
 
     <!--Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

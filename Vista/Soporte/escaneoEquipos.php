@@ -159,7 +159,7 @@
         $('#codigoQr').submit(function(e) {
             e.preventDefault(); //evita el comportambiento normal del submit, es decir, recarga total de la página
             folio = document.getElementById("codigoQrObtenido").value;
-            $("#Equipo").empty();
+            $("#Asignacion").empty();
             console.log(folio);
             $.ajax({
                 url: "historialTraspasos.php",

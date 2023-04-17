@@ -52,7 +52,7 @@ $con->set_charset("utf8");
             <?php require("menuInventario.php"); ?> <!-- Menu lateral -->
         </div>
     </header>
-    <?php require("prestamosModel.php"); ?>
+
 
     <!--Contenido-->
     <div class="app-wrapper">

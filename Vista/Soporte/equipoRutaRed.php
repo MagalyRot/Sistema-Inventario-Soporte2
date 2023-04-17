@@ -8,25 +8,13 @@ $equipos = $sentencia->fetchAll(PDO::FETCH_OBJ);
 foreach ($equipos as $equipo) {
 ?>
     <tr>
-        <td><?php echo $equipo->folio ?></td>
-        <td><?php echo $equipo->fechaI ?></td>
-        <td><?php echo $equipo->fechaF ?></td>
-        <td><?php echo $equipo->persona ?></td>
-        <td><?php echo $equipo->area ?></td>
-        <td><?php echo $equipo->ubi ?></td>
-        <td><?php echo $equipo->tipo ?></td>
-        <?php
-        $estado=$equipo->tipo;
-        if ($estado == 2) {
-        ?>
-            <td><span class="badge bg-succes">Activo</span></td>
-        <?php
-        } else {
-        ?>
-            <td><span class="badge bg-warning">Finalizado</span></td>
-        <?php
-        }
-        ?>
+        <td><?php echo $equipo->ip ?></td>
+        <td><?php echo $equipo->nodo ?></td>
+        <td><?php echo $equipo->parcheo ?></td>
+        <td><?php echo $equipo->puerto ?></td>
+        <td><?php echo $equipo->segmento ?></td>
+        <td><?php echo $equipo->num_segmento ?></td>
+        <td><?php echo $equipo->vlan ?></td>
     </tr>
 <?php
 }

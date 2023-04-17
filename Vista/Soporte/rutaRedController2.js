@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var rut_id, opcion;
+    var ruta_id3, opcion;
     var dataTable = $('#datos_ruta').DataTable({
         "responsive": true,
         "processing": true,
@@ -33,18 +33,18 @@ $(document).ready(function() {
     //submit para agregar ruta de red
     $('#formRutaRed').submit(function(e){                         
         e.preventDefault(); //evita el comportambiento normal del submit, es decir, recarga total de la página
-        vlan      = $.trim($('#vlan').val());    
-        segmento  = $.trim($('#segmento').val());
-        nodo      = $.trim($('#nodo').val());    
-        panel1     = $.trim($('#panel1').val());    
-        puerto    = $.trim($('#puerto').val());
+        vlan3      = $.trim($('#vlan3').val());    
+        segmento3  = $.trim($('#segmento3').val());
+        nodo3      = $.trim($('#nodo3').val());    
+        panel3     = $.trim($('#panel3').val());    
+        puerto3    = $.trim($('#puerto3').val());
                         
 
             $.ajax({
               url: "rutaRedModel.php",
               type: "POST",
               datatype:"json",    
-              data:  {rut_id:rut_id,vlan:vlan, segmento:segmento,panel1:panel1,nodo:nodo,puerto:puerto,opcion:opcion},    
+              data:  {ruta_id3:ruta_id3,vlan3:vlan3, segmento3:segmento3,panel3:panel3,nodo3:nodo3,puerto3:puerto3,opcion:opcion},    
               success: function(data) {
                 dataTable.ajax.reload(null, false);
                }
@@ -63,7 +63,7 @@ $(document).ready(function() {
   // limpiar campos
   $("#limpiarCampos").click(function(){
     opcion = 1; //alta           
-    rut_id=null;  
+    ruta_id3=null;  
     $("#formRutaRed").trigger("reset");
     $(".modal-header").css( "color", "white" );
     $(".modal-title1").text("Agregar ruta de red");

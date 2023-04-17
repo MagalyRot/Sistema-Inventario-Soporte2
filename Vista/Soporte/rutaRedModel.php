@@ -5,18 +5,18 @@ $objeto   = new Conexion();
 $conexion = $objeto->Conectar();
 
 //OBTENCIÓN DE LOS DATOS DEL FORMULARIO DE ACTUALIZACIÓN A TRAVÉS DEL MÉTODO POST
-$vlan      = (isset($_POST['vlan'])) ? $_POST['vlan'] : '';
-$segmento  = (isset($_POST['segmento'])) ? $_POST['segmento'] : '';
-$nodo      = (isset($_POST['nodo'])) ? $_POST['nodo'] : '';
-$panel     = (isset($_POST['panel1'])) ? $_POST['panel1'] : '';
-$puerto    = (isset($_POST['puerto'])) ? $_POST['puerto'] : '';
+$vlan1      = (isset($_POST['vlan3'])) ? $_POST['vlan3'] : '';
+$segmento1  = (isset($_POST['segmento3'])) ? $_POST['segmento3'] : '';
+$nodo1      = (isset($_POST['nodo3'])) ? $_POST['nodo3'] : '';
+$panel1     = (isset($_POST['panel3'])) ? $_POST['panel3'] : '';
+$puerto1    = (isset($_POST['puerto3'])) ? $_POST['puerto3'] : '';
 $opcion    = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 $ruta_id   = (isset($_POST['id'])) ? $_POST['id'] : '';
 $estado=0;
 
 switch($opcion){
     case 1:
-        $consulta  = "INSERT INTO ruta_red (nodo_red,panelParcheo_red,puertoPanel_red,segmento, vlan, estado_red) VALUES('$nodo', '$panel', '$puerto', '$segmento', '$vlan', '1') ";			
+        $consulta  = "INSERT INTO ruta_red (nodo_red,panelParcheo_red,puertoPanel_red,segmento, vlan, estado_red) VALUES('$nodo1', '$panel1', '$puerto1', '$segmento1', '$vlan1', '1') ";			
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();             
         break;
