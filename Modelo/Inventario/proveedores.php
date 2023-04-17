@@ -1,0 +1,3 @@
+<?php
+// ESTO ES OTRA PRUEBA
+?>
