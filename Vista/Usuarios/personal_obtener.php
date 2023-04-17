@@ -1,6 +1,6 @@
 <?php
 
-include("../../Controlador/ConexionD2.php");
+include("../../Controlador/Conexion.php");
     
 function obtener_todos_registros(){
     include("../../Controlador/Conexion.php");

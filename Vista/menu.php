@@ -17,7 +17,7 @@
                     <span class="nav-link-text">DASHBOARD</span>
                 </a>
             </li>
-
+ 
             <li class="nav-item has-submenu">
                 <a class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#submenu-1" aria-expanded="false" aria-controls="submenu-1">
                     <span class="nav-icon">
@@ -173,7 +173,7 @@
                         <!-- <li class="submenu-item"><a class="submenu-link" href="usuarios/AgregarUsuario.php">Agregar usuario</a></li> -->
                         <li class="submenu-item"><a class="submenu-link" href="usuarios/usuarios.php">Usuarios</a></li>
                         <li class="submenu-item"><a class="submenu-link" href="usuarios/roles.php">Roles</a></li>
-                        <li class="submenu-item"><a class="submenu-link" href="usuarios/personal.php">Personal</a></li>
+                        <!-- <li class="submenu-item"><a class="submenu-link" href="usuarios/personal.php">Personal</a></li> -->
                     </ul>
                 </div>
             </li>
@@ -220,4 +220,3 @@
     </nav>
 </div>
 
-<script src="../JS/funcionesMenu.js"></script>

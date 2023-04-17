@@ -505,11 +505,13 @@
     <!-- Javascript -->
  
 <!-- Javascript -->
+    <script src="../../assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="rutaRedController2.js"></script> 
 
-<script src="//code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="//code.jquery.com/jquery-3.5.1.js"></script>
     <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
     <script src="//cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
-    <script type="text/javascript" src="rutaRedController1.js"></script> 
 
     <!--Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
