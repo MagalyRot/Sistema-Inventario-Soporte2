@@ -1,5 +1,5 @@
 <?php
     function login(){
-        header("Location:../inventario-soporte/Vista/login.php");
+        header("Location:../sistema-inventario-soporte2/Vista/login.php");
     }
 ?>

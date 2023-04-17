@@ -13457,15 +13457,63 @@ button.close:focus {
 }
 
 .app-card .app-icon-holder {
-    display: inline-block;
-    background: #edfdf6;
-    color: #15a362;
+    /* display: inline-block; */
+    background: #198754;
+    color: #ffffff;
     width: 50px;
     height: 50px;
-    padding-top: 10px;
+    padding-top: 11px;
     font-size: 1rem;
     text-align: center;
-    border-radius: 50%
+    border-radius: 20%;
+    margin-top: -1.5rem !important;
+    /* box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(64, 64, 64, 0.4) !important; */
+    /* background-image: linear-gradient(195deg, #42424a 0%, #191919 100%); */
+}
+
+.app-card .app-icon-holder2 {
+    /* display: inline-block; */
+    background: #eebf41;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    padding-top: 11px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 20%;
+    margin-top: -1.5rem !important;
+    /* box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(64, 64, 64, 0.4) !important; */
+    /* background-image: linear-gradient(195deg, #42424a 0%, #191919 100%); */
+}
+
+.app-card .app-icon-holder3 {
+    /* display: inline-block; */
+    background: #0f61d8;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    padding-top: 11px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 20%;
+    margin-top: -1.5rem !important;
+    /* box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(64, 64, 64, 0.4) !important; */
+    /* background-image: linear-gradient(195deg, #42424a 0%, #191919 100%); */
+}
+
+.app-card .app-icon-holder4 {
+    /* display: inline-block; */
+    background: #dc3545;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    padding-top: 11px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 20%;
+    margin-top: -1.5rem !important;
+    /* box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(64, 64, 64, 0.4) !important; */
+    /* background-image: linear-gradient(195deg, #42424a 0%, #191919 100%); */
 }
 
 .app-card .app-icon-holder.icon-holder-mono {
@@ -14050,4 +14098,3 @@ button.close:focus {
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: 'liga';
 }
-

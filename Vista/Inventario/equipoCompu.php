@@ -222,7 +222,7 @@ $con->set_charset("utf8");
                                             <input name="componentes[]" type="hidden" id="id_procesador">
                                             <input name="componentes[]" type="hidden" id="id_almacenamiento">
                                             <input name="componentes[]" type="hidden" id="id_ram">
-                                            <input name="id_rutaRed" type="text" id="id_rutaRed">
+                                            <input name="id_rutaRed"    type="hidden" id="id_rutaRed">
                                             <!--<button type="submit" id="btnGuardar" class="btn app-btn-primary">Guardar</button>-->
                                             <button type="submit" class="btn app-btn-primary">Guardar</button>
                                         </div>
@@ -364,10 +364,10 @@ $con->set_charset("utf8");
 
                 <!-- Tabla-->
                 <nav id="orders-table-tab" class="orders-table-tab app-nav-tabs nav shadow-sm flex-column flex-sm-row mb-4">
-                    <a class="flex-sm-fill text-sm-center nav-link active" id="orders-all-tab" data-bs-toggle="tab" href="#orders-all" role="tab" aria-controls="orders-all" aria-selected="true">Todos los equipos</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" id="orders-paid-tab" data-bs-toggle="tab" href="#orders-paid" role="tab" aria-controls="orders-paid" aria-selected="false">Centros de cómputo</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" id="orders-pending-tab" data-bs-toggle="tab" href="#orders-pending" role="tab" aria-controls="orders-pending" aria-selected="false">Departamentos</a>
-                    <a class="flex-sm-fill text-sm-center nav-link" id="orders-cancelled-tab" data-bs-toggle="tab" href="#orders-cancelled" role="tab" aria-controls="orders-cancelled" aria-selected="false">Otros</a>
+                    <a class="flex-sm-fill text-sm-center nav-link active" id="orders-all-tab" data-bs-toggle="tab" href="#orders-all" role="tab" aria-controls="orders-all" aria-selected="true">Equipos disponibles</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" id="orders-paid-tab" data-bs-toggle="tab" href="#orders-paid" role="tab" aria-controls="orders-paid" aria-selected="false">Equipos ocupados</a>
+                    <!-- <a class="flex-sm-fill text-sm-center nav-link" id="orders-pending-tab" data-bs-toggle="tab" href="#orders-pending" role="tab" aria-controls="orders-pending" aria-selected="false">Departamentos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" id="orders-cancelled-tab" data-bs-toggle="tab" href="#orders-cancelled" role="tab" aria-controls="orders-cancelled" aria-selected="false">Otros</a> -->
                 </nav>
 
 
@@ -499,6 +499,7 @@ $con->set_charset("utf8");
             </div>
         </div>
     </div>
+    <script src="../../assets/plugins/popper.min.js"></script>
 
     <script src="//code.jquery.com/jquery-3.5.1.js"></script>
     <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
