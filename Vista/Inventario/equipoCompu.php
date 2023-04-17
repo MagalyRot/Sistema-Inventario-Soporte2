@@ -399,13 +399,13 @@ $con->set_charset("utf8");
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
 
                     <div class="tab-pane fade" id="orders-paid" role="tabpanel" aria-labelledby="orders-paid-tab">
-                        <div class="app-card app-card-orders-table mb-5">
+                        <div class="app-card app-card-orders-table shadow-sm mb-5">
                             <div class="app-card-body">
-                                <div class="table-responsive">
-                                    <table id="tabla_equiposOcupados" class="table mb-0 text-left">
+                                <!-- <div class="table-responsive"> -->
+                                    <table id="tabla_equiposOcupados" class="table app-table-hover mb-0 display nowrap text-left"  cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
                                                 <th class="cell">Folio</th>
@@ -420,7 +420,7 @@ $con->set_charset("utf8");
                                         </thead>
 
                                     </table>
-                                </div>
+                                <!-- </div> -->
                             </div>
                         </div>
                     </div>

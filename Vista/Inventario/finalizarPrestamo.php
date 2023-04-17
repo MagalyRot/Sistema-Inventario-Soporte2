@@ -47,8 +47,8 @@
                     <div class="tab-pane fade show active" id="orders-all" role="tabpanel" aria-labelledby="orders-all-tab">
                         <div class="app-card app-card-orders-table shadow-sm mb-5">
                             <div class="app-card-body">
-                                <div class="table-responsive">
-                                    <table id="tabla_temporales" class="table app-table-hover mb-0 text-left">
+                                <!-- <div class="table-responsive"> -->
+                                    <table id="tabla_temporales" class="table app-table-hover mb-0 display nowrap text-left"  cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
                                                 <th class="cell">Folio</th>
@@ -65,16 +65,16 @@
                                             </tr>
                                         </thead>
                                     </table>
-                                </div>
+                                <!-- </div> -->
                             </div>
                         </div>
                     </div>
                     <!-- TABLA DE PRÉSTAMOS PERMANENTES -->
                     <div class="tab-pane fade" id="orders-paid" role="tabpanel" aria-labelledby="orders-paid-tab">
-                        <div class="app-card app-card-orders-table mb-5">
+                        <div class="app-card app-card-orders-table shadow-sm  mb-5">
                             <div class="app-card-body">
-                                <div class="table-responsive">
-                                    <table id="tabla_permanentes" class="table app-table-hover mb-0 text-left">
+                                <!-- <div class="table-responsive"> -->
+                                    <table id="tabla_permanentes" class="table app-table-hover mb-0 display nowrap text-left"  cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
                                                 <th class="cell">Folio</th>
@@ -90,16 +90,16 @@
                                             </tr>
                                         </thead>
                                     </table>
-                                </div>
+                                <!-- </div> -->
                             </div>
                         </div>
                     </div>
                     <!-- TABLA DE PRÉSTAMOS FINALIZADOS -->
                     <div class="tab-pane fade" id="orders-pending" role="tabpanel" aria-labelledby="orders-pending-tab">
-                        <div class="app-card app-card-orders-table mb-5">
+                        <div class="app-card app-card-orders-table shadow-sm  mb-5">
                             <div class="app-card-body">
-                                <div class="table-responsive">
-                                    <table id="tabla_finalizados" class="table  mb-0 text-left">
+                                <!-- <div class="table-responsive"> -->
+                                    <table id="tabla_finalizados" class="table app-table-hover mb-0 display nowrap text-left"  cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
                                                 <th class="cell">Folio</th>
@@ -116,16 +116,16 @@
                                             </tr>
                                         </thead>
                                     </table>
-                                </div>
+                                <!-- </div> -->
                             </div>
                         </div>
                     </div>
                     <!-- TABLA DE PRÉSTAMOS CANCELADOS -->
                     <div class="tab-pane fade" id="table-cancel" role="tabpanel" aria-labelledby="orders-pending-tab">
-                        <div class="app-card app-card-orders-table mb-5">
+                        <div class="app-card app-card-orders-table shadow-sm  mb-5">
                             <div class="app-card-body">
-                                <div class="table-responsive">
-                                    <table id="tabla_cancelados" class="table  mb-0 text-left">
+                                <!-- <div class="table-responsive"> -->
+                                    <table id="tabla_cancelados" class="table app-table-hover mb-0 display nowrap text-left"  cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
                                                 <th class="cell">Folio</th>
@@ -140,7 +140,7 @@
                                             </tr>
                                         </thead>
                                     </table>
-                                </div>
+                                <!-- </div> -->
                             </div>
                         </div>
                     </div>

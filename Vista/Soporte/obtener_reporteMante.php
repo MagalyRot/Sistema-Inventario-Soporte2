@@ -27,7 +27,7 @@ foreach ($equipos as $equipo) {
         <td><?php echo $equipo->area ?></td>
         <td><?php echo $equipo->tipo ?></td>
         <td><?php echo $equipo->fechaI ?></td>
-        <td><?php echo $equipo->observacionIngreso ?></td>
+        <td><?php echo $equipo->descripcionIngreso ?></td>
         <td><?php echo $equipo->fechaF ?></td>
         <td><?php echo $equipo->descripcionSalida ?></td>
     </tr>

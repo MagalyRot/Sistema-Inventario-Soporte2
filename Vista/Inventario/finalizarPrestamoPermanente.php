@@ -2,7 +2,7 @@
 if(!isset($_POST["idTrabajador2"])) exit;
 if(!isset($_POST["id_ubicacion2"])) exit;
 session_start();
-
+$valor  =   $_SESSION['id'];
 
 $admin = $_POST["idTrabajador2"];
 $destino = $_POST["id_ubicacion2"];
@@ -29,11 +29,21 @@ $sentencia->execute([$folio, $idAsignacion]);
 
 //Consulta para agregar a encargado a tabla detalle asignacion
 $sentencia = $base_de_datos->prepare("INSERT INTO detalleasig_per(id_asig, id_personal) VALUES (?, ?);");
-$sentencia->execute([$idAsignacion,7]);
+$sentencia->execute([$idAsignacion,$valor]);
+
+
+//Consulta encargado
+$sentencia = $base_de_datos->prepare("SELECT p.id_per as id_encargado FROM personal as p, tipo_personal as tp
+where p.tipo_per = tp.id_tipoper
+and p.tipo_per = 1
+and p.nombre_per = 'Abel Magdiel'");
+$sentencia->execute();
+$resultado = $sentencia->fetch(PDO::FETCH_OBJ);
+$idAdmin = $resultado === false ? 1 : $resultado->id_encargado;
 
 //Consulta para agregar al responsable a tabla detalle asignacion
 $sentencia = $base_de_datos->prepare("INSERT INTO detalleasig_per(id_asig, id_personal) VALUES (?, ?);");
-$sentencia->execute([$idAsignacion,6]);
+$sentencia->execute([$idAsignacion,$idAdmin]);
 
 $base_de_datos->beginTransaction();
 $sentencia = $base_de_datos->prepare("INSERT INTO detalleasig_art(id_asig, id_art) VALUES (?, ?);");

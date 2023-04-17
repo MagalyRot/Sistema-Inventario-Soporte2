@@ -260,7 +260,7 @@ $con->set_charset("utf8");
                                                         <select class="selectpicker form-control" data-show-subtext="true" data-live-search="true" id="administrativo" name="administrativo" onchange="Datosadministrativo(event.target.value);">
                                                             <option value="VACIO" disabled="" selected="">Seleccionar Administrativo</option>
                                                             <?php
-                                                            $consulta = "SELECT id_per,ntrabajador_per,concat_ws(' ', nombre_per,apellidoP_per,apellidoM_per) as nombre FROM personal WHERE tipo_per=1 and estado_per=1";
+                                                            $consulta = "SELECT id_per,ntrabajador_per,concat_ws(' ', nombre_per,apellidoP_per,apellidoM_per) as nombre FROM personal WHERE tipo_per=3 and estado_per=1";
                                                             $resultado = mysqli_query($con, $consulta);
                                                             $contador = 0;
                                                             while ($misdatos = mysqli_fetch_assoc($resultado)) {
